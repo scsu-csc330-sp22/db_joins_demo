@@ -1,0 +1,37 @@
+<html>
+    <head>
+      <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+        }
+        th {
+          text-align: left;
+        }
+        </style>
+        <title>City population app</title>
+    </head>
+
+    <body>
+        <h1 style=color:red>Country data </h1>
+        <hr>
+        <div>
+        <ul>
+          <li><a href="/view_countries"> View countries </a></li>
+          <li><a href="/add_country"> Add country </a></li>
+          <li><a href="/view_cities"> View cities </a></li>
+          <li><a href="/sort_by_name"> Sort cities by name </a></li>
+          <li><a href="/add_city"> Add city </a></li>
+          <li><a href="/delete"> Delete city </a></li>
+          <li><a href="/search"> Search city </a></li>
+          <li><a href="/filter_currency"> Filter by currency</a></li>
+          <li><a href="/delete_db"> Wipe database </a> </li>
+        </ul>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

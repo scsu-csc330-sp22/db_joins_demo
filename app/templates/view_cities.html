@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+		<table>
+			<tr>
+				<th>City</th>
+				<th>Population</th>
+				<th>Country</th>
+			</tr>
+			{% for city in cities %}
+			<tr>
+				<td>{{city.city}}</td>
+				<td>{{city.population}}</td>
+				<td>{{city.country.country}}</td>
+			</tr>
+			{% endfor %}
+{% endblock %}

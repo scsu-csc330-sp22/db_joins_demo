@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+		<table>
+			<tr>
+				<th>Country</th>
+				<th>Currency</th>
+			</tr>
+			{% for country in countries %}
+			<tr>
+				<td>{{country.country}}</td>
+				<td>{{country.currency}}</td>
+			</tr>
+			{% endfor %}
+{% endblock %}
